@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+}
+h1 {
+  color: red;
+}
+
+/* Text shaking effect */
+.shake {
+  animation: shake 0.02s linear infinite;
+
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  from {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(4px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-4px, 0, 0);
+  }
+}
